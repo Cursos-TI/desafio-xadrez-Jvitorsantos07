@@ -1,32 +1,40 @@
 #include <stdio.h>
+    
+    int main(){
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+        //Cadastro das variáveis//
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+        
+        int i1 = 1, i2 = 1;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+        //Peça Torre, utilizando while//
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+        while (i1 <= 5)
+        {
+            printf("Torre - direita...\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+            i1++;
+        }
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+        printf("\n"); //pular uma linha//
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        //Peça Bispo, utilizando do-while//
 
-    return 0;
-}
+        do
+        {
+            printf("Bispo - diagonal, cima, direita...\n");
+            i2++;
+        } while (i2 <= 5);
+
+        printf("\n"); // Pular uma linha//
+
+        //Peça Rainha, utilizando for//
+
+        for ( int i3 = 1; i3 <= 8; i3++)
+        {
+            printf("Rainha - esquerda...\n");
+        }
+        
+        return 0;
+    }
